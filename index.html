@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAgro - Futuro sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Eco<span>Agro</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Tema</a></li>
+                    <li><a href="#calculadora">Simulador</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Agro é forte: Futuro sustentável</h2>
+            <p>Equilíbrio entre alta produção e preservação do meio ambiente.</p>
+            <a href="#calculadora" class="btn">Simular impacto</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="container section">
+        <div class="grid-2">
+            <div>
+                <h2>O desafio do século XXI</h2>
+                <p>O grande desafio do agronegócio moderno não é apenas produzir em larga escala, mas encontrar o "equilíbrio perfeito" entre a produtividade e a conservação ambiental.</p>
+                <p>O uso inteligente de recursos como água e solo garante que o agro continue forte hoje, sem comprometer as gerações de amanhã. Esta ferramenta ajuda a diagnosticar a eficiência da sua produção.</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=600&q=80" alt="Plantação de soja sustentável com tecnologia">
+            </div>
+        </div>
+    </section>
+
+    <section id="calculadora" class="bg-light section">
+        <div class="container">
+            <div class="text-center">
+                <h2>Simulador de eficiência sustentável</h2>
+                <p>Insira os dados da sua produção para calcular o índice de equilíbrio ambiental.</p>
+            </div>
+
+            <div class="card-calculator">
+                <form id="agroForm">
+                    <div class="form-group">
+                        <label for="area">Área cultivada (em hectares):</label>
+                        <input type="number" id="area" required min="1" placeholder="Ex: 50">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="producao">Produção total colhida (em toneladas):</label>
+                        <input type="number" id="producao" required min="1" placeholder="Ex: 300">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="manejo">Práticas de manejo adotadas:</label>
+                        <select id="manejo">
+                            <option value="convencional">Manejo convencional (Uso intenso de insumos)</option>
+                            <option value="intermediario">Manejo integrado (Rotação de culturas / Plantio direto)</option>
+                            <option value="sustentavel">Agroecologia / biológicos (Foco em regeneração)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-block">Calcular diagnóstico</button>
+                </form>
+
+                <div id="resultado" class="result-box hidden">
+                    <h3>Resultado da análise</h3>
+                    <div class="metrics">
+                        <p><strong>Produtividade:</strong> <span id="resProdutividade">0</span> Ton/Ha</p>
+                        <p><strong>Pegada de carbono estimada:</strong> <span id="resCarbono">0</span></p>
+                        <p><strong>Índice de sustentabilidade:</strong> <span id="resScore">0%</span></p>
+                    </div>
+                    <div id="FeedbackMensagem" class="feedback-msg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pilares" class="container section">
+        <div class="text-center">
+            <h2>Os pilares do equilíbrio</h2>
+            <p>Como a tecnologia e a natureza caminham juntas no campo.</p>
+        </div>
+        <div class="grid-3">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?auto=format&fit=crop&w=400&q=80" alt="Irrigação inteligente">
+<h3>Produção eficiente</h3>
+<p>Otimizar o uso de água e fertilizantes através da agricultura de precisão reduz custos e protege o lençol freático.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=400&q=80" alt="Solo protegido">
+                <h3>Meio ambiente</h3>
+                <p>A manutenção de áreas de preservação permanente (APPs) e o plantio direto fixam o carbono no solo, combatendo as mudanças climáticas.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=400&q=80" alt="Futuro econômico">
+                <h3>Futuro forte</h3>
+                <p>Propriedades sustentáveis conseguem certificações internacionais, acessam créditos verdes e garantem longevidade à terra.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 EcoAgro - Agro é forte: Futuro sustentável, equilíbrio, produção e meio ambiente.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
